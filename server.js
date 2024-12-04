@@ -31,6 +31,8 @@ app.get('/api/search', async (req, res) => {
   if (!query) {
     return res.status(400).json({ message: 'Missing search query' });
   }
+  console.log(query);
+  
 
   try {
     const result = await client.search({
@@ -46,7 +48,7 @@ app.get('/api/search', async (req, res) => {
     });
 
     const books = result.hits.hits.map((hit) => hit._source);
-    console.log(books);
+    // console.log(books);
     res.status(200).json(books);
   } catch (error) {
     console.error(error);

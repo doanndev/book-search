@@ -56,28 +56,17 @@
 
 							<div class="action-menu">
 
-								<div class="search-bar">
+								<!-- <div class="search-bar"> -->
 									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
 										<i class="icon icon-search"></i>
 									</a>
-									<form role="search" method="get" class="search-box">
+									<!-- <form role="search" method="get" class="search-box">
 										<input class="search-field text search-input" placeholder="Search"
 											type="search">
-									</form>
+									</form> -->
 									
-								</div>
+								<!-- </div> -->
 
-								<!-- search result modal -->
-
-								<div id="search-modal" class="modal">
-
-									<div class="modal-content">
-								
-										<ul id="search-results"></ul>
-								
-									</div>
-								
-								</div>
 							</div>
 
 						</div><!--top-right-->
@@ -1228,6 +1217,18 @@
 				</div><!--footer-bottom-content-->
 			</div>
 		</div>
+	</div>
+
+	<div class="overlay" id="overlay"></div>
+	<div class="modal" id="modal">
+		<div class="input-container">
+			<input type="text" class="search-input" id="searchInput" placeholder="Search...">
+			<!-- <button class="record-button" id="recordButton">🎙️</button> -->
+			<button class="record-button" id="record">Recording</button>
+			<button class="record-button" style="display: none;" id="stopRecord" disabled>Stop</button>
+		</div>
+		<p>Transcription: <span id="transcription"></span></p>
+	  <div class="results" id="results"></div>
 	</div>
 
 	<script src="js/jquery-1.11.0.min.js"></script>

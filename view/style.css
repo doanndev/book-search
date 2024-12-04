@@ -2492,3 +2492,65 @@ footer#footer {
   background-color: #C5A992; /* Highlight on hover */
 
 }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1001;
+  width: 90%;
+  height: auto;
+  max-height: 50%;
+  max-width: 600px;
+  overflow: auto;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.record-button {
+  height: auto;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.results {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.results li {
+  list-style-type: none;
+  color: #999;
+}
+
+.strong-text{
+  font-weight: bold;
+  color: #000;
+}
